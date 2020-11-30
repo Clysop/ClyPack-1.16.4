@@ -1,5 +1,7 @@
 **
 !*/
+!.gitignore
+
 !/config/**
 !/defaultconfigs/**
 !/kubejs/**
@@ -8,4 +10,4 @@
 !minecraftinstance.json
 !Setup.ps1
 
-!.gitignore
+!/mods/OptiFine_1.16.4_HD_U_G5_MOD.jar
