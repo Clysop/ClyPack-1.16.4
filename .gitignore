@@ -6,5 +6,6 @@
 
 !InstanceSync.jar
 !minecraftinstance.json
+!Setup.ps1
 
 !.gitignore
