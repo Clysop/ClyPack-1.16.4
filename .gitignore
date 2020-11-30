@@ -1,0 +1,10 @@
+**
+!*/
+!/config/**
+!/defaultconfigs/**
+!/kubejs/**
+
+!InstanceSync.jar
+!minecraftinstance.json
+
+!.gitignore
