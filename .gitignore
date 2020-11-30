@@ -5,9 +5,8 @@
 !/config/**
 !/defaultconfigs/**
 !/kubejs/**
+!/thirdparty-mods/**
 
 !InstanceSync.jar
 !minecraftinstance.json
 !Setup.ps1
-
-!/mods/OptiFine_1.16.4_HD_U_G5_MOD.jar
