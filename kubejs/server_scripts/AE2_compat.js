@@ -3,73 +3,157 @@
 events.listen('recipes', event => {
   // Change recipes here
   
-  let metals = [
+  event.recipes.immersiveengineering.crusher("appliedenergistics2:certus_quartz_dust", "#forge:gems/certus_quartz")
+  event.recipes.immersiveengineering.crusher("appliedenergistics2:fluix_dust", "appliedenergistics2:fluix_crystal")
+  
+  event.recipes.thermal.pulverizer("appliedenergistics2:certus_quartz_dust", "#forge:gems/certus_quartz")
+  
+  
+  let ores = [
     'copper',
     'tin',
     'lead',
     'silver',
     'nickel',
+  ]
+  
+  ores.forEach(element => {
+    event.recipes.appliedenergistics2.grinder({
+      "input": {
+        "tag": "forge:ingots/" + element
+      },
+      "result": {
+        "primary": {
+          "item": "thermal:" + element + "_dust"
+        }
+      },
+      "turns": 4
+    })
+    event.recipes.appliedenergistics2.grinder({
+      "input": {
+        "tag": "forge:ores/" + element
+      },
+      "result": {
+        "primary": {
+          "item": "thermal:" + element + "_dust"
+        },
+        "optional": [
+          {
+            "item": "thermal:" + element + "_dust"
+          }
+        ]
+      },
+      "turns": 4
+    })
+  })
+  
+  let ingots = [
     'bronze',
     'electrum',
+    'invar',
     'constantan',
+    'signalum',
+    'lumium',
+    'enderium'
   ]
   
-  metals.forEach(item => {
-    event.replaceInput({}, '#forge:dusts/' + item, 'thermal:' + item + '_dust')
-    event.replaceOutput({}, '#forge:dusts/' + item, 'thermal:' + item + '_dust')
-    
-    event.replaceInput({}, '#forge:ingots/' + item, 'thermal:' + item + '_ingot')
-    event.replaceOutput({}, '#forge:ingots/' + item, 'thermal:' + item + '_ingot')
-    
-    event.replaceInput({}, '#forge:nuggets/' + item, 'thermal:' + item + '_nugget')
-    event.replaceOutput({}, '#forge:nuggets/' + item, 'thermal:' + item + '_nugget')
-    
-    event.replaceInput({}, '#forge:storage_blocks/' + item, 'thermal:' + item + '_block')
-    event.replaceOutput({}, '#forge:storage_blocks/' + item, 'thermal:' + item + '_block')
-    
-    event.replaceInput({}, '#forge:plates/' + item, 'thermal:' + item + '_plate')
-    event.replaceOutput({}, '#forge:plates/' + item, 'thermal:' + item + '_plate')
+  ingots.forEach(element => {
+    event.recipes.appliedenergistics2.grinder({
+      "input": {
+        "tag": "forge:ingots/" + element
+      },
+      "result": {
+        "primary": {
+          "item": "thermal:" + element + "_dust"
+        }
+      },
+      "turns": 4
+    })
   })
   
-  event.replaceInput({}, '#forge:dusts/uranium', 'mekanism:dust_uranium')
-  event.replaceOutput({}, '#forge:dusts/uranium', 'mekanism:dust_uranium')
-  event.replaceInput({}, '#forge:dusts/steel', 'mekanism:dust_steel')
-  event.replaceOutput({}, '#forge:dusts/steel', 'mekanism:dust_steel')
-  
-  event.replaceInput({}, '#forge:ingots/uranium', 'mekanism:ingot_uranium')
-  event.replaceOutput({}, '#forge:ingots/uranium', 'mekanism:ingot_uranium')
-  event.replaceInput({}, '#forge:ingots/steel', 'mekanism:ingot_steel')
-  event.replaceOutput({}, '#forge:ingots/steel', 'mekanism:ingot_steel')
-  
-  event.replaceInput({}, '#forge:nuggets/uranium', 'mekanism:nugget_uranium')
-  event.replaceOutput({}, '#forge:nuggets/uranium', 'mekanism:nugget_uranium')
-  event.replaceInput({}, '#forge:nuggets/steel', 'mekanism:nugget_steel')
-  event.replaceOutput({}, '#forge:nuggets/steel', 'mekanism:nugget_steel')
-  
-  event.replaceInput({}, '#forge:storage_blocks/uranium', 'mekanism:block_uranium')
-  event.replaceOutput({}, '#forge:storage_blocks/uranium', 'mekanism:block_uranium')
-  event.replaceInput({}, '#forge:storage_blocks/steel', 'mekanism:block_steel')
-  event.replaceOutput({}, '#forge:storage_blocks/steel', 'mekanism:block_steel')
-  
-  
-  let nonMetals = [
+  let gems = [
+    'apatite',
+    'cinnabar',
+    'niter',
     'sulfur',
-    'gold',
-    'iron',
     'lapis',
     'diamond',
-    'emerald',
-    'quartz',
+    'emerald'
   ]
   
-  nonMetals.forEach(item => {
-    event.replaceInput({}, '#forge:dusts/' + item, 'thermal:' + item + '_dust')
-    event.replaceOutput({}, '#forge:dusts/' + item, 'thermal:' + item + '_dust')
+  gems.forEach(element => {
+    event.recipes.appliedenergistics2.grinder({
+      "input": {
+        "tag": "forge:gems/" + element
+      },
+      "result": {
+        "primary": {
+          "item": "thermal:" + element + "_dust"
+        }
+      },
+      "turns": 4
+    })
   })
   
-  event.replaceInput({}, '#forge:sawdust', 'thermal:sawdust')
-  event.replaceOutput({}, '#forge:sawdust', 'thermal:sawdust')
+  event.recipes.appliedenergistics2.grinder({
+    "input": {
+      "tag": "forge:ingots/aluminum"
+    },
+    "result": {
+      "primary": {
+        "item": "immersiveengineering:dust_aluminum"
+      }
+    },
+    "turns": 4
+  })
+  event.recipes.appliedenergistics2.grinder({
+    "input": {
+      "tag": "forge:ores/aluminum"
+    },
+    "result": {
+      "primary": {
+        "item": "immersiveengineering:dust_aluminum"
+      },
+      "optional": [
+        {
+          "item": "immersiveengineering:dust_aluminum"
+        }
+      ]
+    },
+    "turns": 4
+  })
   
+  let temp = ['uranium', 'osmium']
+  
+  temp.forEach(element => {
+    event.recipes.appliedenergistics2.grinder({
+      "input": {
+        "tag": "forge:ingots/" + element
+      },
+      "result": {
+        "primary": {
+          "item": "mekanism:dust_" + element
+        }
+      },
+      "turns": 4
+    })
+    event.recipes.appliedenergistics2.grinder({
+      "input": {
+        "tag": "forge:ores/" + element
+      },
+      "result": {
+        "primary": {
+          "item": "mekanism:dust_" + element
+        },
+        "optional": [
+          {
+            "item": "mekanism:dust_" + element
+          }
+        ]
+      },
+      "turns": 4
+    })
+  })
 })
 
 events.listen('item.tags', event => {
