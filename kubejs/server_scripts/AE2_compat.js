@@ -52,7 +52,7 @@ events.listen('recipes', event => {
   event.replaceOutput({}, '#forge:storage_blocks/steel', 'mekanism:block_steel')
   
   
-  let onlyDusts = [
+  let nonMetals = [
     'sulfur',
     'gold',
     'iron',
@@ -62,7 +62,7 @@ events.listen('recipes', event => {
     'quartz',
   ]
   
-  onlyDusts.forEach(item => {
+  nonMetals.forEach(item => {
     event.replaceInput({}, '#forge:dusts/' + item, 'thermal:' + item + '_dust')
     event.replaceOutput({}, '#forge:dusts/' + item, 'thermal:' + item + '_dust')
   })
