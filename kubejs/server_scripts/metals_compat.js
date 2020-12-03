@@ -1,5 +1,7 @@
 // priority: 0
 
+settings.logSkippedRecipes = false
+
 events.listen('recipes', event => {
   // Change recipes here
   

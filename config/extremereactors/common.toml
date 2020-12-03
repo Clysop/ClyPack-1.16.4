@@ -57,6 +57,21 @@
 	[common.worldgen]
 		#Enable generation of Yellorite Ore.
 		yelloriteOreEnableWorldGen = true
+		#If false, disables all world gen from Extreme Reactors;
+		#all other worldgen settings are automatically ignored.
+		enableWorldGen = true
+		#User-set world generation version.
+		#Increase this by one if you want Extreme Reactors to re-run world generation in already modified chunks.
+		#Range: > 0
+		userWorldGenVersion = 1
+		#Maximum number of Anglesite Ore clusters per chunk.
+		#Range: 1 ~ 16
+		anglesiteOreMaxClustersPerChunk = 2
+		#Enable generation of Anglesite Ore.
+		anglesiteOreEnableWorldGen = true
+		#Re-run world gen in chunks that have already been generated (once they have been loaded), 
+		#but have not been modified by Extreme Reactors before.
+		enableWorldRegeneration = false
 		#Enable generation of Benitoite Ore.
 		benitoiteOreEnableWorldGen = true
 		#Maximum number of Benitoite Ores to generate in each cluster.
@@ -65,9 +80,6 @@
 		#Maximum height (Y coordinate) in the world to generate Yellorite Ore.
 		#Range: 1 ~ 256
 		yelloriteOreMaxY = 32
-		#If false, disables all world gen from Extreme Reactors;
-		#all other worldgen settings are automatically ignored.
-		enableWorldGen = true
 		#Maximum number of Anglesite Ores to generate in each cluster.
 		#Range: 1 ~ 16
 		anglesiteOrePerCluster = 5
@@ -77,14 +89,9 @@
 		#Maximum number of Yellorite Ore clusters per chunk.
 		#Range: 1 ~ 25
 		yelloriteOreMaxClustersPerChunk = 3
-		#Maximum number of Anglesite Ore clusters per chunk.
-		#Range: 1 ~ 16
-		anglesiteOreMaxClustersPerChunk = 2
 		#Maximum number of Yellorite Ores to generate in each cluster.
 		#Range: 1 ~ 16
 		yelloriteOrePerCluster = 5
-		#Enable generation of Anglesite Ore.
-		anglesiteOreEnableWorldGen = true
 
 	#Define how Reactors works
 	[common.reactor]
