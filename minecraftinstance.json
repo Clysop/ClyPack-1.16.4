@@ -8998,6 +8998,116 @@
       "preferenceReleaseType": null,
       "manifestName": null,
       "installedTargets": null
+    },
+    {
+      "addonID": 317716,
+      "gameInstanceID": "f803e194-d4dc-4235-ae78-6fc30857d972",
+      "installedFile": {
+        "id": 3067319,
+        "displayName": "curiouselytra-forge-1.16.3-4.0.0.1.jar",
+        "fileName": "curiouselytra-forge-1.16.3-4.0.0.1.jar",
+        "fileDate": "2020-09-28T02:12:23.627Z",
+        "fileLength": 27139,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge-service.overwolf.wtf/files/3067/319/curiouselytra-forge-1.16.3-4.0.0.1.jar",
+        "isAlternate": false,
+        "alternateFileId": 3067320,
+        "dependencies": [
+          {
+            "id": 0,
+            "addonId": 308989,
+            "type": 3,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 309927,
+            "type": 3,
+            "fileId": 0
+          }
+        ],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 668537480,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "top",
+            "fingerprint": 821656344,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "CHANGELOG.md",
+            "fingerprint": 2275514239,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "curiouselytra_icon.png",
+            "fingerprint": 2512131936,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "data",
+            "fingerprint": 4073022409,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "licenses",
+            "fingerprint": 3368067102,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 1111621113,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "README.md",
+            "fingerprint": 347289972,
+            "type": 0,
+            "invalidFingerprint": false
+          }
+        ],
+        "packageFingerprint": 4237590194,
+        "gameVersion": [
+          "1.16.3",
+          "Forge",
+          "1.16.4"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "curiouselytra-forge-1.16.3-4.0.0.1.jar"
+      },
+      "dateInstalled": "2020-12-06T17:25:16.2596229Z",
+      "dateUpdated": "2020-12-06T17:25:16.2606352Z",
+      "dateLastUpdateAttempted": "2020-12-06T17:25:16.2606352Z",
+      "status": 4,
+      "preferenceAutoInstallUpdates": null,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": []
     }
   ],
   "isMigrated": false,
