@@ -10,3 +10,5 @@
 !InstanceSync.jar
 !minecraftinstance.json
 !Setup.ps1
+
+/config/worldedit/.archive-unpack
