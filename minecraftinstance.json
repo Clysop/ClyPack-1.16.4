@@ -30,7 +30,7 @@
   "isUnlocked": true,
   "javaArgsOverride": null,
   "javaDirOverride": null,
-  "lastPlayed": "2020-12-06T17:04:57.6622829Z",
+  "lastPlayed": "2020-12-07T16:46:07.7468105Z",
   "manifest": null,
   "fileDate": "0001-01-01T00:00:00",
   "installedModpack": null,
@@ -1591,14 +1591,14 @@
       "addonID": 404465,
       "gameInstanceID": "f803e194-d4dc-4235-ae78-6fc30857d972",
       "installedFile": {
-        "id": 3091862,
-        "displayName": "ftb-gui-library-1603.1.1.25.jar",
-        "fileName": "ftb-gui-library-1603.1.1.25.jar",
-        "fileDate": "2020-10-24T22:30:08.35Z",
-        "fileLength": 410066,
+        "id": 3133000,
+        "displayName": "ftb-gui-library-1604.1.1.26.jar",
+        "fileName": "ftb-gui-library-1604.1.1.26.jar",
+        "fileDate": "2020-12-07T14:27:11.87Z",
+        "fileLength": 412212,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3091/862/ftb-gui-library-1603.1.1.25.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3133/0/ftb-gui-library-1604.1.1.26.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [],
@@ -1606,7 +1606,7 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 1850368000,
+            "fingerprint": 1759559597,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -1618,7 +1618,7 @@
           },
           {
             "foldername": "assets",
-            "fingerprint": 2899131147,
+            "fingerprint": 3309161248,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -1629,7 +1629,7 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 349247463,
+        "packageFingerprint": 2215478469,
         "gameVersion": [
           "1.16.3",
           "1.16.4",
@@ -1644,16 +1644,16 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "ftb-gui-library-1603.1.1.25.jar"
+        "FileNameOnDisk": "ftb-gui-library-1604.1.1.26.jar"
       },
       "dateInstalled": "2020-12-02T22:28:48.5942995Z",
-      "dateUpdated": "2020-12-02T22:28:48.5982977Z",
-      "dateLastUpdateAttempted": "2020-12-02T22:28:48.5982977Z",
-      "status": 5,
+      "dateUpdated": "2020-12-07T16:41:34.0727868Z",
+      "dateLastUpdateAttempted": "2020-12-07T16:41:34.0727868Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": true,
+      "isModified": false,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -2091,14 +2091,14 @@
       "addonID": 317780,
       "gameInstanceID": "f803e194-d4dc-4235-ae78-6fc30857d972",
       "installedFile": {
-        "id": 3126305,
-        "displayName": "v1.11.3 for Forge 1.16.4 - 1.16.2",
-        "fileName": "XaerosWorldMap_1.11.3_Forge_1.16.4.jar",
-        "fileDate": "2020-11-29T13:09:49.663Z",
-        "fileLength": 336175,
+        "id": 3132590,
+        "displayName": "v1.11.4 for Forge 1.16.4 - 1.16.2",
+        "fileName": "XaerosWorldMap_1.11.4_Forge_1.16.4.jar",
+        "fileDate": "2020-12-06T22:47:11.93Z",
+        "fileLength": 337914,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3126/305/XaerosWorldMap_1.11.3_Forge_1.16.4.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3132/590/XaerosWorldMap_1.11.4_Forge_1.16.4.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [],
@@ -2106,13 +2106,13 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 4217990404,
+            "fingerprint": 4008438638,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "xaero",
-            "fingerprint": 3834751864,
+            "fingerprint": 72944090,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -2129,7 +2129,7 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 3761163396,
+        "packageFingerprint": 618422835,
         "gameVersion": [
           "1.16.3",
           "Forge",
@@ -2145,16 +2145,16 @@
         "gameVersionDateReleased": "2019-08-01T00:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "XaerosWorldMap_1.11.3_Forge_1.16.4.jar"
+        "FileNameOnDisk": "XaerosWorldMap_1.11.4_Forge_1.16.4.jar"
       },
       "dateInstalled": "2020-12-02T22:39:29.1843542Z",
-      "dateUpdated": "2020-12-02T22:39:29.1913506Z",
-      "dateLastUpdateAttempted": "2020-12-02T22:39:29.1913506Z",
-      "status": 5,
+      "dateUpdated": "2020-12-07T16:41:31.2704314Z",
+      "dateLastUpdateAttempted": "2020-12-07T16:41:31.2704314Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": true,
+      "isModified": false,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -2232,70 +2232,7 @@
     {
       "addonID": 79287,
       "gameInstanceID": "f803e194-d4dc-4235-ae78-6fc30857d972",
-      "installedFile": {
-        "id": 3033731,
-        "displayName": "WailaHarvestability-mc1.16.2-forge-1.1.13.jar",
-        "fileName": "WailaHarvestability-mc1.16.2-forge-1.1.13.jar",
-        "fileDate": "2020-08-16T03:08:42.527Z",
-        "fileLength": 28281,
-        "releaseType": 1,
-        "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3033/731/WailaHarvestability-mc1.16.2-forge-1.1.13.jar",
-        "isAlternate": false,
-        "alternateFileId": 0,
-        "dependencies": [
-          {
-            "id": 0,
-            "addonId": 253449,
-            "type": 3,
-            "fileId": 0
-          }
-        ],
-        "isAvailable": true,
-        "modules": [
-          {
-            "foldername": "META-INF",
-            "fingerprint": 1296523872,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "squeek",
-            "fingerprint": 3901494161,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "pack.mcmeta",
-            "fingerprint": 1848672239,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "assets",
-            "fingerprint": 3975610186,
-            "type": 0,
-            "invalidFingerprint": false
-          }
-        ],
-        "packageFingerprint": 1668672343,
-        "gameVersion": [
-          "1.16.3",
-          "Forge",
-          "1.16.4",
-          "1.16.2"
-        ],
-        "hasInstallScript": false,
-        "isCompatibleWithClient": false,
-        "categorySectionPackageType": 0,
-        "restrictProjectFileAccess": 0,
-        "projectStatus": 0,
-        "projectId": 0,
-        "gameVersionDateReleased": "2019-08-01T00:00:00Z",
-        "gameId": 0,
-        "isServerPack": false,
-        "FileNameOnDisk": "WailaHarvestability-mc1.16.2-forge-1.1.13.jar"
-      },
+      "installedFile": null,
       "dateInstalled": "2020-12-03T12:44:02.6907187Z",
       "dateUpdated": "2020-12-03T12:44:02.8016829Z",
       "dateLastUpdateAttempted": "2020-12-03T12:44:02.8016829Z",
@@ -2303,12 +2240,110 @@
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": true,
+      "isModified": false,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
       "installedTargets": null
+    },
+    {
+      "addonID": 245211,
+      "gameInstanceID": "f803e194-d4dc-4235-ae78-6fc30857d972",
+      "installedFile": {
+        "id": 3108607,
+        "displayName": "TheOneProbe - 1.16-3.0.6",
+        "fileName": "theoneprobe-1.16-3.0.6.jar",
+        "fileDate": "2020-11-11T15:09:32.45Z",
+        "fileLength": 307009,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/3108/607/theoneprobe-1.16-3.0.6.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [
+          {
+            "id": 0,
+            "addonId": 227083,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 244651,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 270789,
+            "type": 2,
+            "fileId": 0
+          }
+        ],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 4234440047,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "mcjty",
+            "fingerprint": 4170004664,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 3749773231,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 3099463473,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "data",
+            "fingerprint": 2393313921,
+            "type": 0,
+            "invalidFingerprint": false
+          }
+        ],
+        "packageFingerprint": 3783295933,
+        "gameVersion": [
+          "1.16.3",
+          "Forge",
+          "1.16.4"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "theoneprobe-1.16-3.0.6.jar"
+      },
+      "dateInstalled": "2020-12-07T16:44:52.8127434Z",
+      "dateUpdated": "2020-12-07T16:44:52.8147423Z",
+      "dateLastUpdateAttempted": "2020-12-07T16:44:52.8147423Z",
+      "status": 4,
+      "preferenceAutoInstallUpdates": null,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": []
     },
     {
       "addonID": 273744,
@@ -4557,23 +4592,17 @@
       "addonID": 224791,
       "gameInstanceID": "f803e194-d4dc-4235-ae78-6fc30857d972",
       "installedFile": {
-        "id": 3118746,
-        "displayName": "BloodMagic-1.16.3-3.0.1-6.jar",
-        "fileName": "BloodMagic-1.16.3-3.0.1-6.jar",
-        "fileDate": "2020-11-21T15:56:18.71Z",
-        "fileLength": 7604445,
+        "id": 3132991,
+        "displayName": "BloodMagic-1.16.3-3.0.2-7.jar",
+        "fileName": "BloodMagic-1.16.3-3.0.2-7.jar",
+        "fileDate": "2020-12-07T14:14:57.873Z",
+        "fileLength": 7750419,
         "releaseType": 3,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3118/746/BloodMagic-1.16.3-3.0.1-6.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3132/991/BloodMagic-1.16.3-3.0.2-7.jar",
         "isAlternate": false,
-        "alternateFileId": 3118747,
+        "alternateFileId": 3132993,
         "dependencies": [
-          {
-            "id": 0,
-            "addonId": 238222,
-            "type": 2,
-            "fileId": 0
-          },
           {
             "id": 0,
             "addonId": 306770,
@@ -4585,37 +4614,43 @@
             "addonId": 253449,
             "type": 2,
             "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 238222,
+            "type": 2,
+            "fileId": 0
           }
         ],
         "isAvailable": true,
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 1601837183,
+            "fingerprint": 1126835390,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "wayoftime",
-            "fingerprint": 211964163,
+            "fingerprint": 2512316762,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": ".cache",
-            "fingerprint": 3978198862,
+            "fingerprint": 947302680,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "assets",
-            "fingerprint": 1943731865,
+            "fingerprint": 3666582184,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "data",
-            "fingerprint": 1478542176,
+            "fingerprint": 1657281834,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -4626,9 +4661,10 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 796047013,
+        "packageFingerprint": 1317330561,
         "gameVersion": [
           "1.16.3",
+          "Forge",
           "1.16.4"
         ],
         "hasInstallScript": false,
@@ -4640,16 +4676,16 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "BloodMagic-1.16.3-3.0.1-6.jar"
+        "FileNameOnDisk": "BloodMagic-1.16.3-3.0.2-7.jar"
       },
       "dateInstalled": "2020-12-02T22:44:43.6962657Z",
-      "dateUpdated": "2020-12-02T22:44:43.7282552Z",
-      "dateLastUpdateAttempted": "2020-12-02T22:44:43.7282552Z",
-      "status": 5,
+      "dateUpdated": "2020-12-07T16:41:37.9525265Z",
+      "dateLastUpdateAttempted": "2020-12-07T16:41:37.9525265Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": true,
+      "isModified": false,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -4922,7 +4958,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 250832,
@@ -8857,14 +8893,14 @@
       "addonID": 263420,
       "gameInstanceID": "f803e194-d4dc-4235-ae78-6fc30857d972",
       "installedFile": {
-        "id": 3126291,
-        "displayName": "v20.28.1 for Forge 1.16.4 - 1.16.2",
-        "fileName": "Xaeros_Minimap_20.28.1_Forge_1.16.4.jar",
-        "fileDate": "2020-11-29T13:03:34Z",
-        "fileLength": 631563,
+        "id": 3132576,
+        "displayName": "v20.28.2 for Forge 1.16.4 - 1.16.2",
+        "fileName": "Xaeros_Minimap_20.28.2_Forge_1.16.4.jar",
+        "fileDate": "2020-12-06T22:42:34.263Z",
+        "fileLength": 633333,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge-service.overwolf.wtf/files/3126/291/Xaeros_Minimap_20.28.1_Forge_1.16.4.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3132/576/Xaeros_Minimap_20.28.2_Forge_1.16.4.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [],
@@ -8872,13 +8908,13 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 2079949888,
+            "fingerprint": 178138061,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "xaero",
-            "fingerprint": 2531598485,
+            "fingerprint": 3508940982,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -8895,7 +8931,7 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 935803658,
+        "packageFingerprint": 3563253759,
         "gameVersion": [
           "1.16.3",
           "Forge",
@@ -8911,16 +8947,16 @@
         "gameVersionDateReleased": "2019-08-01T00:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "Xaeros_Minimap_20.28.1_Forge_1.16.4.jar"
+        "FileNameOnDisk": "Xaeros_Minimap_20.28.2_Forge_1.16.4.jar"
       },
       "dateInstalled": "2020-12-02T22:39:17.0924597Z",
-      "dateUpdated": "2020-12-02T22:39:17.0984443Z",
-      "dateLastUpdateAttempted": "2020-12-02T22:39:17.0984443Z",
-      "status": 5,
+      "dateUpdated": "2020-12-07T16:41:32.6525453Z",
+      "dateLastUpdateAttempted": "2020-12-07T16:41:32.6525453Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": true,
+      "isModified": false,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -9107,7 +9143,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     }
   ],
   "isMigrated": false,

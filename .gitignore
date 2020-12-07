@@ -11,4 +11,5 @@
 !minecraftinstance.json
 !Setup.ps1
 
+*.bak
 /config/worldedit/.archive-unpack
