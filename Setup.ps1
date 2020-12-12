@@ -34,7 +34,7 @@ if (Test-Path $mmc_file) {
       $item.version = "$forge_version"
     }
   }
-  ConvertTo-Json $content | Set-Content $mmc_file
+  ConvertTo-Json $content -Depth 4 | Set-Content $mmc_file
 }
 
 Remove-Item "forge_version.txt"
