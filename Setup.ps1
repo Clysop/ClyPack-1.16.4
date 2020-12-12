@@ -1,7 +1,6 @@
 $url = "https://github.com/Clysop/ClyPack-1.16.4/archive/master.zip"
 $output = "modpack"
 $mmc_file = "..\mmc-pack.json"
-$forge_version = "$(Get-Content "forge_version.txt")"
 
 cls
 Write-Output "Setting up modpack...`n`n`n`n`n`n"
@@ -26,12 +25,13 @@ Move-Item "thirdparty-mods\*" "mods" -Force
 Remove-Item "thirdparty-mods" -Recurse
 
 if (Test-Path $mmc_file) {
+  $forge_version = Get-Content "forge_version.txt"
   Write-Output "`nFound MultiMC instance file, setting forge version to $forge_version."
   
   $content = Get-Content $mmc_file | ConvertFrom-Json
   foreach ($item in $content.components) {
     if ($item.uid -eq "net.minecraftforge") {
-      $item.version = $forge_version
+      $item.version = "$forge_version"
     }
   }
   ConvertTo-Json $content | Set-Content $mmc_file
