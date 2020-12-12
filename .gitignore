@@ -9,6 +9,7 @@
 
 !InstanceSync.jar
 !minecraftinstance.json
+!forge_version.txt
 !Setup.ps1
 
 *.bak
