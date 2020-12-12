@@ -25,12 +25,13 @@ Move-Item "thirdparty-mods\*" "mods" -Force
 Remove-Item "thirdparty-mods" -Recurse
 
 if (Test-Path $mmc_file) {
+  $forge_version = Get-Content "forge_version.txt"
   Write-Output "`nFound MultiMC instance file, setting forge version to $forge_version."
   
   $content = Get-Content $mmc_file | ConvertFrom-Json
   foreach ($item in $content.components) {
     if ($item.uid -eq "net.minecraftforge") {
-      $item.version = "$(Get-Content "forge_version.txt")"
+      $item.version = "$forge_version"
     }
   }
   ConvertTo-Json $content | Set-Content $mmc_file
