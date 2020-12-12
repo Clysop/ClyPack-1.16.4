@@ -1,7 +1,6 @@
 $url = "https://github.com/Clysop/ClyPack-1.16.4/archive/master.zip"
 $output = "modpack"
 $mmc_file = "..\mmc-pack.json"
-$forge_version = "$(Get-Content "forge_version.txt")"
 
 cls
 Write-Output "Setting up modpack...`n`n`n`n`n`n"
@@ -31,7 +30,7 @@ if (Test-Path $mmc_file) {
   $content = Get-Content $mmc_file | ConvertFrom-Json
   foreach ($item in $content.components) {
     if ($item.uid -eq "net.minecraftforge") {
-      $item.version = $forge_version
+      $item.version = "$(Get-Content "forge_version.txt")"
     }
   }
   ConvertTo-Json $content | Set-Content $mmc_file
