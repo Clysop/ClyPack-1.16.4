@@ -6479,6 +6479,103 @@
       "installedTargets": null
     },
     {
+      "addonID": 241721,
+      "gameInstanceID": "f803e194-d4dc-4235-ae78-6fc30857d972",
+      "installedFile": {
+        "id": 3131455,
+        "displayName": "AstralSorcery-1.16.4-1.13.4.jar",
+        "fileName": "astralsorcery-1.16.4-1.13.4.jar",
+        "fileDate": "2020-12-05T15:45:53.55Z",
+        "fileLength": 28756651,
+        "releaseType": 3,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge-service.overwolf.wtf/files/3131/455/astralsorcery-1.16.4-1.13.4.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [
+          {
+            "id": 0,
+            "addonId": 309927,
+            "type": 3,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 316833,
+            "type": 3,
+            "fileId": 0
+          }
+        ],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 3107895901,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "hellfirepvp",
+            "fingerprint": 2361339378,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "data",
+            "fingerprint": 185605629,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "coremods",
+            "fingerprint": 3314283042,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 611736504,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 1232891596,
+            "type": 0,
+            "invalidFingerprint": false
+          }
+        ],
+        "packageFingerprint": 3043273261,
+        "gameVersion": [
+          "Forge",
+          "1.16.4"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "astralsorcery-1.16.4-1.13.4.jar"
+      },
+      "dateInstalled": "2020-12-14T16:27:20.5692693Z",
+      "dateUpdated": "2020-12-14T16:27:20.5912623Z",
+      "dateLastUpdateAttempted": "2020-12-14T16:27:20.5912623Z",
+      "status": 4,
+      "preferenceAutoInstallUpdates": null,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": []
+    },
+    {
       "addonID": 69162,
       "gameInstanceID": "f803e194-d4dc-4235-ae78-6fc30857d972",
       "installedFile": {
@@ -7439,6 +7536,84 @@
       "preferenceReleaseType": null,
       "manifestName": null,
       "installedTargets": null
+    },
+    {
+      "addonID": 316833,
+      "gameInstanceID": "f803e194-d4dc-4235-ae78-6fc30857d972",
+      "installedFile": {
+        "id": 3123187,
+        "displayName": "ObserverLib-1.16.4-1.4.4.jar",
+        "fileName": "observerlib-1.16.4-1.4.4.jar",
+        "fileDate": "2020-11-25T20:56:13.563Z",
+        "fileLength": 147391,
+        "releaseType": 2,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/3123/187/observerlib-1.16.4-1.4.4.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 3585930128,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "hellfirepvp",
+            "fingerprint": 2418151001,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "javascript",
+            "fingerprint": 2727651585,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 3068550138,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 3982211534,
+            "type": 0,
+            "invalidFingerprint": false
+          }
+        ],
+        "packageFingerprint": 541466957,
+        "gameVersion": [
+          "Forge",
+          "1.16.4"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "observerlib-1.16.4-1.4.4.jar"
+      },
+      "dateInstalled": "2020-12-14T16:27:19.2468781Z",
+      "dateUpdated": "2020-12-14T16:27:19.2488783Z",
+      "dateLastUpdateAttempted": "2020-12-14T16:27:19.2488783Z",
+      "status": 4,
+      "preferenceAutoInstallUpdates": null,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": []
     },
     {
       "addonID": 252848,
