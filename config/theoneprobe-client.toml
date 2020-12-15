@@ -79,7 +79,7 @@ tooltipScale = 1.2000000476837158
 chestContentsBorderColor = "ff006699"
 #0 means don't show break progress, 1 is show as bar, 2 is show as text
 #Range: 0 ~ 2
-showBreakProgress = 1
+showBreakProgress = 0
 #true means shows harvestability with vanilla style icons
 harvestStyleVanilla = true
 
