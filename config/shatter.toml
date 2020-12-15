@@ -1,0 +1,12 @@
+
+#These options affect only the client that loads the mod.
+[clientOnly]
+	#The reason this is disabled by default is due to rendering issues that occur due to the way Minecraft rescales children.
+	#Shattering child mobs will show an adult model.
+	enableChildShatter = false
+	#Enable Shatter on Players?
+	enablePlayerShatter = true
+	#The reason this is disabled by default is due to rendering issues that may occur due to some boss' unique models.
+	#Good examples are the Minecraft's Ender Dragon, and TwilightForest's Naga and Hydra.
+	enableBossShatter = false
+
