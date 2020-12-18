@@ -14,6 +14,12 @@ break_in_creative = false
 	tree_breaking = true
 	#When set to true, leaves that should naturally break will be broken instantly.
 	leaves_breaking = true
+	#What part of the tree should be cut.
+	#Whole tree will break the whole tree.
+	#Above cut will break only blocks that are connected from above the cut point.
+	#Above y will break only blocks that are above the y value of the cut point.
+	#Allowed Values: WHOLE_TREE, ABOVE_CUT, ABOVE_Y
+	detection_mode = "ABOVE_CUT"
 	#The minimum amount of leaves that needs to be around the top most log in order for the mod to consider it a tree.
 	#INFO: Only in INSTANTANEOUS mode.
 	#Range: 0 ~ 5
