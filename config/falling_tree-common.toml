@@ -1,6 +1,6 @@
-#When set to true, a tree will only be chopped down if the player is sneaking.
+#When set to true, a tree will, only be chopped down if the player is sneaking.
 reverse_sneaking = false
-#When set to true, the mod will cut down trees in creative too.
+#When set to true, the mod will, cut down trees in creative too.
 break_in_creative = false
 
 #Falling Tree configuration
@@ -15,9 +15,9 @@ break_in_creative = false
 	#When set to true, leaves that should naturally break will be broken instantly.
 	leaves_breaking = true
 	#What part of the tree should be cut.
-	#Whole tree will break the whole tree.
-	#Above cut will break only blocks that are connected from above the cut point.
-	#Above y will break only blocks that are above the y value of the cut point.
+	#WHOLE_TREE tree will break the whole tree.
+	#ABOVE_CUT will break only blocks that are connected from above the cut point.
+	#ABOVE_Y will break only blocks that are above the y value of the cut point.
 	#Allowed Values: WHOLE_TREE, ABOVE_CUT, ABOVE_Y
 	detection_mode = "ABOVE_CUT"
 	#The minimum amount of leaves that needs to be around the top most log in order for the mod to consider it a tree.
@@ -31,15 +31,16 @@ break_in_creative = false
 	#INFO: Only in INSTANTANEOUS mode.
 	#Range: > 1
 	logs_max_count = 100
-	#Radius to force break leaves. If another tree is still holding the leaves they'll still be broken. If the leaves are persistent (placed by player) they'll also be destroyed.
+	#Radius to force break leaves. If another tree is still holding the leaves they'll still be broken.
+	#If the leaves are persistent (placed by player) they'll also be destroyed.
 	#The radius is applied from one of the top most log blocks.
 	#INFO: break_leaves must be activated for this to take effect.
 	#INFO: Only in INSTANTANEOUS mode.
 	#Range: 0 ~ 10
 	leaves_breaking_force_radius = 0
 	#How to break the tree.
-	#Instantaneous will break it in one go.
-	#Shift down will make the tree fall down as you cut it, so you still have to break x blocks but don't have to climb the tree for them.
+	#INSTANTANEOUS will break it in one go.
+	#SHIFT_DOWN will make the tree fall down as you cut it, so you still have to break x blocks but don't have to climb the tree for them.
 	#Allowed Values: INSTANTANEOUS, SHIFT_DOWN
 	break_mode = "INSTANTANEOUS"
 	#When set to true this allow to have any kind of log in a tree trunk.

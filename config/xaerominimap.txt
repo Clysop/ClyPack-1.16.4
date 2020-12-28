@@ -1,5 +1,5 @@
 #CONFIG ONLY OPTIONS
-ignoreUpdate:270
+ignoreUpdate:272
 updateNotification:true
 settingsButton:false
 allowWrongWorldTeleportation:false
@@ -24,7 +24,7 @@ distance:1
 showCoords:true
 lockNorth:true
 zoom:0
-mapSize:-1
+minimapSize:0
 entityAmount:1
 chunkGrid:-1
 slimeChunks:false
