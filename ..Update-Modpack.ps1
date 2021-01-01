@@ -1,6 +1,5 @@
 param (
-  [switch]$SkipConfirm,
-  [switch]$SkipDownload
+  [switch]$SkipConfirm
 )
 
 $REPO = 'Clysop/ClyPack-1.16.4'
@@ -14,48 +13,37 @@ $mi_file = "$PSScriptRoot\minecraftinstance.json"
 $archive_url = "https://github.com/$REPO/archive/$BRANCH.zip"
 $api_url = "https://api.github.com/repos/$REPO/branches/$BRANCH"
 
+cls
+Write-Output "Setting up modpack...`n`n`n`n`n`n"
 
-if (!($SkipDownload.IsPresent)) {
-  cls
-  Write-Output "Setting up modpack...`n`n`n`n`n`n"
-
-  # Check if there is a newer version available
-  $api_response = Invoke-RestMethod $api_url
-  $remote_date = Get-Date $api_response.commit.commit.author.date
-  if ((Test-Path $mi_file) -and ((Get-Item $mi_file).LastWriteTime -gt $remote_date)) {
-    if ($SkipConfirm.IsPresent) {
-      Exit
-    }
-    $confirmation = Read-Host "There doesn't seem to be a new version available, do you want to continue anyway? [Y/N]"
-    if ($confirmation.ToLower() -ne "y") {
-      Exit
-    }
+# Check if there is a newer version available
+$api_response = Invoke-RestMethod $api_url
+$remote_date = Get-Date $api_response.commit.commit.author.date
+if ((Test-Path $mi_file) -and ((Get-Item $mi_file).LastWriteTime -gt $remote_date)) {
+  if ($SkipConfirm.IsPresent) {
+    Exit
   }
-
-  $script_hash = (Get-FileHash $PSCommandPath).hash
-
-  Write-Output "Downloading modpack..."
-
-  Invoke-WebRequest $archive_url -OutFile ("$output.zip")
-
-  Write-Output "Download complete."
-  Write-Output "Extracting modpack..."
-
-  Expand-Archive ($output + ".zip") -Force
-  Copy-Item ($output + "\*\*") "." -Force -Recurse
-  Remove-Item $output -Recurse
-  Remove-Item ($output + ".zip")
-  
-  (Get-Item $mi_file).LastWriteTime = Get-Date
-  
-  Write-Output "Extraction complete."
-
-  if ($script_hash -ne (Get-FileHash $PSCommandPath).hash) {
-    Write-Output "`nUpdate script changed, reloading script.`n"
-    Invoke-Expression "$PSCommandPath -SkipDownload"
+  $confirmation = Read-Host "There doesn't seem to be a new version available, do you want to continue anyway? [Y/N]"
+  if ($confirmation.ToLower() -ne "y") {
     Exit
   }
 }
+
+Write-Output "Downloading modpack..."
+
+Invoke-WebRequest $archive_url -OutFile ("$output.zip")
+
+Write-Output "Download complete."
+Write-Output "Extracting modpack..."
+
+Expand-Archive ($output + ".zip") -Force
+Copy-Item ($output + "\*\*") "." -Force -Recurse
+Remove-Item $output -Recurse
+Remove-Item ($output + ".zip")
+
+(Get-Item $mi_file).LastWriteTime = Get-Date
+
+Write-Output "Extraction complete."
 
 Write-Output "Downloading mods...`n"
 
