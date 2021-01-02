@@ -57,13 +57,13 @@
 
 [ores]
 	#Registry names of blocks considered 'common ores', requiring the common ore scanner module.
-	commonOreBlocks = []
+	commonOreBlocks = ["appliedenergistics2:quartz_ore"]
 	#Block tags of blocks considered 'rare ores', requiring the common ore scanner module.
 	#Any block with the forge:ores tag is implicitly in this list, unless the block also
 	#matches an ignored or common ore block tag, or is an ignored or common block.
 	rareOreBlockTags = []
 	#Block tags of blocks considered 'common ores', requiring the common ore scanner module.
-	commonOreBlockTags = ["forge:ores/iron", "forge:ores/redstone", "forge:ores/coal", "forge:ores/quartz", "forge:ores/certus_quartz", "forge:ores/aluminum", "forge:ores/osmium", "forge:ores/fluorite", "forge:ores/niter", "forge:ores/sulfur", "forge:ores/copper", "forge:ores/tin", "forge:ores/lead", "forge:ores/nickel"]
+	commonOreBlockTags = ["forge:ores/iron", "forge:ores/redstone", "forge:ores/coal", "forge:ores/quartz", "forge:ores/aluminum", "forge:ores/osmium", "forge:ores/fluorite", "forge:ores/niter", "forge:ores/sulfur", "forge:ores/copper", "forge:ores/tin", "forge:ores/lead", "forge:ores/nickel", "forge:ores/zinc"]
 	#Registry names of blocks considered 'rare ores', requiring the common ore scanner module.
 	rareOreBlocks = ["minecraft:glowstone", "appliedenergistics2:charged_quartz_ore"]
 
