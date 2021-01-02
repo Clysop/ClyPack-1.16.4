@@ -14,32 +14,32 @@ $archive_url = "https://github.com/$REPO/archive/$BRANCH.zip"
 $api_url = "https://api.github.com/repos/$REPO/branches/$BRANCH"
 
 cls
-Write-Output "Setting up modpack...`n`n`n`n`n`n"
+Write-Output "Checking for modpack updates...`n"
 
-# Check if there is a newer version available
 $api_response = Invoke-RestMethod $api_url
 $remote_date = Get-Date $api_response.commit.commit.author.date
+
 if ((Test-Path $mi_file) -and ((Get-Item $mi_file).LastWriteTime -gt $remote_date)) {
-  if ($SkipConfirm.IsPresent) {
-    Exit
+  Write-Output "You have the latest version."
+  Write-Output "If you want to update anyway, delete 'minecraftinstance.json' and run this script again.`n"
+  if (!$SkipConfirm.IsPresent) {
+    Read-Host "Press ENTER to continue..."
   }
-  $confirmation = Read-Host "There doesn't seem to be a new version available, do you want to continue anyway? [Y/N]"
-  if ($confirmation.ToLower() -ne "y") {
-    Exit
-  }
+  Exit
 }
 
+Write-Output "`n`n`n`n`nNew version available."
 Write-Output "Downloading modpack..."
 
-Invoke-WebRequest $archive_url -OutFile ("$output.zip")
+Invoke-WebRequest $archive_url -OutFile "$output.zip"
 
 Write-Output "Download complete."
 Write-Output "Extracting modpack..."
 
-Expand-Archive ($output + ".zip") -Force
-Copy-Item ($output + "\*\*") "." -Force -Recurse
+Expand-Archive "$output.zip" -Force
+Copy-Item "$output\*\*" "." -Force -Recurse
 Remove-Item $output -Recurse
-Remove-Item ($output + ".zip")
+Remove-Item "$output.zip"
 
 (Get-Item $mi_file).LastWriteTime = Get-Date
 
@@ -50,8 +50,8 @@ Write-Output "Downloading mods...`n"
 java -jar InstanceSync.jar
 
 if (Test-Path "$PSScriptRoot\thirdparty-mods") {
-  Move-Item "thirdparty-mods\*" "mods" -Force
-  Remove-Item "thirdparty-mods" -Recurse
+  Move-Item "$PSScriptRoot\thirdparty-mods\*" "$PSScriptRoot\mods" -Force
+  Remove-Item "$PSScriptRoot\thirdparty-mods" -Recurse
 }
 
 if (Test-Path $mmc_file) {
@@ -69,5 +69,8 @@ if (Test-Path $mmc_file) {
   ConvertTo-Json $mmc_content -Depth 4 | Set-Content $mmc_file
 }
 
-Write-Output "`nSetup complete."
-Read-Host "Press ENTER to continue..."
+Write-Output "`nSetup complete.`n"
+
+if (!$SkipConfirm.IsPresent) {
+  Read-Host "Press ENTER to continue..."
+}
